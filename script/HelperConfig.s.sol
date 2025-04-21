@@ -31,7 +31,7 @@ contract HelperConfig is Script {
 
     function getSepoliaETHConfig() public view returns (NetworkConfig memory config) {
         config = NetworkConfig({
-            usdc: 0x7F5c764cBc14f9669B88837ca1490cCa17c31607,
+            usdc: 0x51fCe89b9f6D4c530698f181167043e1bB4abf89,
             priceFeed: 0x694AA1769357215DE4FAC081bf1f309aDC325306,
             deployerKey: vm.envUint("PRIVATE_KEY")
         });
