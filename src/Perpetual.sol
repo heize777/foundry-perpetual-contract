@@ -88,7 +88,7 @@ contract Perpetual is Ownable, ReentrancyGuard {
             totalWeightedPrice += curr.price * duration;
             totalTime += duration;
 
-            if (i == 1) break; // 防止 underflow
+            if (i == 1) break;
         }
 
         if (totalTime == 0) {
